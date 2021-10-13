@@ -2,6 +2,15 @@
 // Title of my project and sections entitled Description, Table of Contents,
 // Installation, Usage, License, Contributing, Tests, and Questions
 
+// WHEN I choose a license for my application from a list of options
+// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+// WHEN I enter my GitHub username
+// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+// WHEN I enter my email address
+// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+// WHEN I click on the links in the Table of Contents
+// THEN I am taken to the corresponding section of the README
+
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
@@ -47,13 +56,19 @@ let questions = [
   {
     type: "input",
     message:
-      "Contribute - If you are open to contributing on this project, please provide instructions and/or rules to contribute.\n",
-    name: "projContribute",
+      "Contribute - If you are open to contributing on this project, please provide your GitHub username.\n",
+    name: "projContributeGitHub",
   },
   {
     type: "input",
     message:
-      "Tests - If you have any tests you would like to describe to users, explan them here.\n",
+      "Contribute - If you are open to contributing on this project, please provide your email address.\n",
+    name: "projContributeEmail",
+  },
+  {
+    type: "input",
+    message:
+      "Tests - If you have any tests you would like to describe to users, explain them here.\n",
     name: "projTests",
   },
   {
@@ -63,57 +78,19 @@ let questions = [
     name: "projQuestions",
   },
 ];
-// inquirer
-//   .prompt([
-//     {
-//       type: "input",
-//       message: "What is the title of your project?",
-//       name: "projTitle",
-//     },
-//     {
-//       type: "input",
-//       message:
-//         "Please describe your project. What was your motivation? Why was it built? What problem does it solve? What did you learn?",
-//       name: "projDescription",
-//     },
-//     {
-//       type: "password",
-//       message: "Re-enter password to confirm:",
-//       name: "confirm",
-//     },
-//   ])
-//   .then((response) =>
-//     response.confirm === response.password
-//       ? console.log("Success!")
-//       : console.log("You forgot your password already?!")
-//   );
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log("Success!")
+  );
+}
 
 // TODO: Create a function to initialize app
 function init() {
-  // inquirer.prompt(questions).then((answers) => {
-  //   console.log(`Here are your answers:\n
-  //   Title: ${projTitle}\n
-  //   Description: ${projDescription}\n
-  //   Installation: ${projInstallation}\n
-  //   Usage: ${projUsage}\n
-  //   License: ${projLicense}\n
-  //   Contribute: ${projContribute}\n
-  //   Tests: ${projTests}\n
-  //   Questions: ${projQuestions}\n`);
-  // });
-  inquirer.prompt(questions).then((answers) => {
-    console.log(`Here are your answers:\n
-    Title: ${answers.projTitle}\n
-    Description: ${answers.projDescription}\n
-    Installation: ${answers.projInstallation}\n
-    Usage: ${answers.projUsage}\n
-    License: ${answers.projLicense}\n
-    Contribute: ${answers.projContribute}\n
-    Tests: ${answers.projTests}\n
-    Questions: ${answers.projQuestions}\n`);
+  inquirer.prompt(questions).then((data) => {
+    const README = generateMarkdown(data);
+    writeToFile("readmes/README.md", README);
   });
 }
 
