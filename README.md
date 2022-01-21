@@ -137,18 +137,14 @@ N/A
    ```sh
    git clone https://github.com/bretpeters3n/pro-README-generator.git
    ```
-2. Lauch the project in Terminal with Node
-   ```sh
-   node index.js
-   ```
-<!--2. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
 3. Run project
    ```sh
-   npm run
-   ```-->
+   node index.js
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
