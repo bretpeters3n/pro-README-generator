@@ -16,9 +16,9 @@
 <img src="https://img.shields.io/badge/CSS-yellow"/>
 <img src="https://img.shields.io/badge/Bulma-blue"/>-->
 <img src="https://img.shields.io/badge/Javascript-indigo"/>
-<!--<img src="https://img.shields.io/badge/jQuery-violet"/>
+<!--<img src="https://img.shields.io/badge/jQuery-violet"/>-->
 <img src="https://img.shields.io/badge/-Node.js-violet"/>
-<img src="https://img.shields.io/badge/-JSON-red"/>
+<!--<img src="https://img.shields.io/badge/-JSON-red"/>
 <img src="https://img.shields.io/badge/-SQL-orange  "/>-->
 
 ![license](https://img.shields.io/badge/license-MIT-red) 
@@ -35,7 +35,7 @@
 
 <h2 align="center">Professional README.md Generator</h2>
   <p align="center">
-    This group project involved creating an application using an API.
+    This project included making a node application (with Inquirer) that will assist the user in creating a README.md file.
     <br />
     <br />
     <!--<a href="https://bretpeters3n.github.io/Advanced-CSS-Portfolio/">View Demo</a>-->
@@ -79,22 +79,17 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <!-- OVERVIEW -->
 ## Overview
-This project is a mock personal portfolio site. This project involves:
-* media queries
-* flexbox
-* UI box styling
-* font-family & line-height
-* pseudo-classes & pseudo-elements
-* CSS selectors to reference HTML elements in different ways
-* CSS variables to keep their code clean
-* advanced CSS styling for an enhanced UI
+This project included making a node application (with Inquirer) that will assist the user in creating a README.md file. The user can launch the application, answer the questions presented to them, and enjoy the README.md file that is generated for them. The file is automatically generated after the user answers the final question.
+
+There are currently two README.md files in this repo. The one you are reading (yes, this one) is describing this project. The other README.md file is located in the 'readmes' folder. This additional README.md file is the one gernerated by the application.
 
 
 <!-- BUILT WITH -->
 ### Built With
-* HTML
-* CSS
+<!--* HTML
+* CSS-->
 * Javascript
+* [NodeJS](https://nodejs.org/en/)
 <!--* [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)-->
 
@@ -140,7 +135,7 @@ N/A
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/bretpeters3n/Advanced-CSS-Portfolio.git
+   git clone https://github.com/bretpeters3n/pro-README-generator.git
    ```
 2. Lauch the project in Terminal with Node
    ```sh
