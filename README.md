@@ -12,15 +12,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 -->
 
-<!--<img src="https://img.shields.io/badge/HTML-orange"/>
-<img src="https://img.shields.io/badge/CSS-yellow"/>
-<img src="https://img.shields.io/badge/Bulma-blue"/>-->
-<img src="https://img.shields.io/badge/Javascript-indigo"/>
-<!--<img src="https://img.shields.io/badge/jQuery-violet"/>-->
-<img src="https://img.shields.io/badge/-Node.js-violet"/>
-<!--<img src="https://img.shields.io/badge/-JSON-red"/>
-<img src="https://img.shields.io/badge/-SQL-orange  "/>-->
-
 ![license](https://img.shields.io/badge/license-MIT-red) 
 
 
@@ -34,6 +25,16 @@
   -->
 
 <h2 align="center">Professional README.md Generator</h2>
+  <p align="center">
+    <!--<img src="https://img.shields.io/badge/HTML-orange"/>
+    <img src="https://img.shields.io/badge/CSS-yellow"/>
+    <img src="https://img.shields.io/badge/Bulma-blue"/>-->
+    <img src="https://img.shields.io/badge/Javascript-indigo"/>
+    <!--<img src="https://img.shields.io/badge/jQuery-violet"/>-->
+    <img src="https://img.shields.io/badge/-Node.js-violet"/>
+    <!--<img src="https://img.shields.io/badge/-JSON-red"/>
+    <img src="https://img.shields.io/badge/-SQL-orange  "/>-->
+  </p>
   <p align="center">
     This project included making a node application (with Inquirer) that will assist the user in creating a README.md file.
     <br />
